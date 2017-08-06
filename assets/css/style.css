@@ -1,0 +1,27 @@
+/*
+* Author: Alex P
+* Project Name: Psych-Game
+* Version: 1
+* Date: 08.04.17
+* URL:https://itsokayitsofficial.github.io/Psych-Game/
+*/
+
+
+/*=========
+Base Styles
+=========*/
+
+html,
+body {
+    height: 100%;
+}
+
+#body-wrapper {
+    height: 100%;
+}
+
+.jumbotron {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}

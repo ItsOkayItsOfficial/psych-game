@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Psych Game</title>
+
+    <!-- Normalize not needed with BS -->
+
+    <!-- Bootstrap CSS 3.3.7 -->
+    <link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css">
+    <!-- Inhouse CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="body-wrapper">
+
+        <nav id="nav" class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="">Psych Game</a>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Options<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a id="reset" onclick="reset()">Reset</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <header class="jumbotron">
+            <div class="row" style="text-align:center">
+                <h2>Guess my number between 1-100!</h2>
+                <h3 id="hint"><h3>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                <div class="form-group" >
+                    <label class="control-label" for="focusedInput" id="input">Enter Guess</label>
+                    <input type='text' id='guess'>
+                    <button id="checkBtn">Check</button>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                        <label class="col-md-6">Wins:</label>
+                        <p id="wins"></p>
+                </div>
+                <div class="col-md-6">
+                        <div class="col-md-6">
+                                <label class="col-md-6">Loses:</label>
+                                <p id="loses"></p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="row">
+                    <button class="btn btn-primary" id="reset" onClick="reset()">New Game</button>
+                </div>
+        </header>
+        <!-- header  -->
+
+
+    </div>
+    <!-- #body-wrapper  -->
+
+    <!-- Inhouse Js  -->
+    <script src="assets/js/game.js"></script>
+    <!-- Important jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
